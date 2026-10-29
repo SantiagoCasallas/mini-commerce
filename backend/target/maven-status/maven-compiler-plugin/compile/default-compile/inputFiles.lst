@@ -1,0 +1,8 @@
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/Api.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/Application.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/Errors.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/OrderRepository.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/OrderService.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/Product.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/ProductRepository.java
+/home/lucky/Documentos/Github/mini-commerce/backend/src/main/java/dev/portfolio/commerce/ShopOrder.java

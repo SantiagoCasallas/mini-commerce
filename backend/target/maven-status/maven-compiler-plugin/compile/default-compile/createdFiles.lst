@@ -1,0 +1,12 @@
+dev/portfolio/commerce/Application.class
+dev/portfolio/commerce/ShopOrder$Line.class
+dev/portfolio/commerce/OrderService.class
+dev/portfolio/commerce/Errors.class
+dev/portfolio/commerce/ProductRepository.class
+dev/portfolio/commerce/OrderRepository.class
+dev/portfolio/commerce/Product.class
+dev/portfolio/commerce/OrderService$Item.class
+dev/portfolio/commerce/Api.class
+dev/portfolio/commerce/OrderService$Request.class
+dev/portfolio/commerce/Api$Catalog.class
+dev/portfolio/commerce/ShopOrder.class
