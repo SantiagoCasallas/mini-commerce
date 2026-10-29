@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "projects": {
+    "mini-commerce": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.json",
+            "index": "src/index.html",
+            "styles": ["src/styles.css"],
+            "assets": [{ "glob": "**/*", "input": "public" }],
+            "outputPath": "dist/mini-commerce"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "600kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": { "buildTarget": "mini-commerce:build" }
+        }
+      }
+    }
+  }
+}

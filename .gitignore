@@ -1,0 +1,27 @@
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+backend/target/
+.env
+*.log
+.idea/
+.vscode/
+
+# Configuración y credenciales locales
+.env.*
+!.env.example
+!**/.env.example
+.vercel/
+**/.vercel/
+*.pem
+*.key
+
+# Configuración pública generada antes de compilar Angular
+frontend/src/generated/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Credenciales locales de proveedores
+.aws/

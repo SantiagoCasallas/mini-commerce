@@ -1,0 +1,3 @@
+CREATE TABLE products (id BIGINT PRIMARY KEY, name VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, category VARCHAR(255) NOT NULL, price NUMERIC(12,2) NOT NULL CHECK(price>=0), stock INTEGER NOT NULL CHECK(stock>=0), illustration VARCHAR(255) NOT NULL);
+CREATE TABLE orders (id UUID PRIMARY KEY, created_at TIMESTAMP WITH TIME ZONE NOT NULL, total NUMERIC(12,2) NOT NULL CHECK(total>=0), status VARCHAR(255) NOT NULL);
+CREATE TABLE order_items (order_id UUID NOT NULL REFERENCES orders(id), position INTEGER NOT NULL, product_id BIGINT NOT NULL REFERENCES products(id), name VARCHAR(255) NOT NULL, unit_price NUMERIC(12,2) NOT NULL, quantity INTEGER NOT NULL CHECK(quantity>0), PRIMARY KEY(order_id,position));

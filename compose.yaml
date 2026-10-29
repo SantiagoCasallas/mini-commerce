@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: mini_commerce
+      POSTGRES_USER: commerce
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-commerce}
+    volumes:
+      - commerce_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U commerce -d mini_commerce"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: jdbc:postgresql://db:5432/mini_commerce
+      DATABASE_USER: commerce
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-commerce}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  commerce_data:
