@@ -16,3 +16,7 @@
 - Vercel, Render y Neon aún no tienen recursos configurados por esta tarea. No se ha verificado un pedido desde un dominio público.
 
 Consultar los pasos que requieren cuentas, secretos y URLs en [DEPLOYMENT.md](DEPLOYMENT.md). Autenticación, historial, administración e idempotencia continúan pendientes.
+
+## Publicación intentada
+
+El commit con los fuentes y la configuración se creó localmente. `git push origin main` no pudo autenticarse (`could not read Username`). El remoto sigue sin estos cambios hasta que el usuario autentique GitHub y haga push. No se utilizaron credenciales de otra cuenta ni se forzó el historial.

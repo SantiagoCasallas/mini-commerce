@@ -8,6 +8,8 @@ Repositorio configurado: <https://github.com/SantiagoCasallas/mini-commerce>.
 
 Se recuperaron los fuentes de la primera versión y se añadió `.gitignore` para excluir `node_modules`, `dist`, `target`, cachés, `.env`, `.vercel` y configuración generada de API. Los archivos de ejemplo `.env.example` sí se incluyen. Retirar archivos del seguimiento no los borra de tu disco ni elimina sus commits anteriores.
 
+Los cambios de esta tarea quedaron en commits locales. El intento de `git push` fue rechazado porque este entorno no tiene credenciales HTTPS de GitHub. Para publicarlos, abre el repositorio en GitHub Desktop e inicia sesión con una cuenta que tenga acceso, luego pulsa **Push origin**; también puedes ejecutar `git push origin main` desde una terminal autenticada. No compartas contraseñas ni tokens en el chat.
+
 Si haces cambios posteriores:
 
 ```bash
